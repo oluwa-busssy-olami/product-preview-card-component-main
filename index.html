@@ -8,10 +8,6 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Product preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,24 +25,44 @@
 
 <body>
 
-    <main class="container">
-        <div class="product-container">
-            <div class="img-product-desktop">
-                <img src="./images/image-product-desktop.jpg" alt="Chanel perfume bottle" class="product-img">
+    <div class="card-container">
+        <div class="image-content"></div>
+        <div class="full-content">
+            <div class="top-content">
+                <h2>
+                    PERFUMES
+                </h2>
+                <h1>
+                    Gabrielle Essence Eau De Parfum
+                </h1>
             </div>
-            <div class="product-card">
-                <p class="perfume">PERFUME</p>
-
-                <h1>Gabrielle Essence Eau De Parfum </h1>
-
-                <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
-
-                <div class="product-price">$149.99 <span id="discount-price">$169.99</span></div>
-
-                <button><img src="./images/icon-cart.svg" alt="Shopping cart icon" id="btnIcon">Add to Cart</button>
+            <div class="paragraph">
+                <p>
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer- Creator for the House of CHANEL.
+                </p>
             </div>
+            <div class="amount">
+                <div class="product-price">
+                    <p>
+                        $149.99
+                    </p>
+                </div>
+                <div class="dicount-price">
+                    <p>
+                        $169.99
+                    </p>
+                </div>
+            </div>
+            <a href="">
+                <button class="button">
+                <div class="button-pd">
+                <img src="./images/icon-cart.svg" alt="cart image">
+                <p> Add to Cart </p>
+            </div>
+            </button>
+            </a>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
